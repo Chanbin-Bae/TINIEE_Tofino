@@ -70,7 +70,7 @@ tb_predict = p4_ingress.tb_predict #
 
 tb_forward = p4_ingress.tb_forward #
 
-csv_file = load_csv_as_weights("/home/tofino/tiniee/p4src/weights.csv")
+csv_file = load_csv_as_weights("~/tiniee/rule/weights.csv")
 for i, weight in enumerate(csv_file):
     # 0~251
     if i < 378:
@@ -88,7 +88,7 @@ for i, weight in enumerate(csv_file):
         weight_7 = weight[8]
     )
 
-csv_file = load_csv_as_weights("/home/tofino/tiniee/p4src/weights_exit.csv")
+csv_file = load_csv_as_weights("~/tiniee/rule/weights_exit.csv")
 for i, weight in enumerate(csv_file):
     # 252,253
     if i < 4:
